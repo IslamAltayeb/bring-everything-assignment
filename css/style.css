@@ -1,0 +1,145 @@
+/* global prop */
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark-color: #19283f;
+    --red-color:  #ff3150;
+    --yellow-color:#ffc400;
+    --section-color: #eff7fa;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;    
+}
+
+/* start header  */
+.heading{
+    background-color: var(--dark-color);
+    color:var(--section-color)
+}
+/* end header  */
+
+/* start landing section */
+.landing{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDWqwoOCRHAgEDm_2er_5sAVoLSik6xfJCBs5Q334p&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    flex-flow: wrap column;
+}
+
+.landing .my-list a{
+    color:var(--yellow-color);
+    text-decoration: none;
+}
+
+.landing .my-list a:hover{
+    color: var(--red-color);
+    text-decoration: underline;
+}
+/* end landing section */
+
+/* start unOrder section */
+.unOrder{
+    background-color: var(--section-color);
+}
+/* end unOrder section */
+
+/* start text section */
+.text{
+    width: 80%;
+    margin: 0 auto;
+}
+/* end text section */
+
+/* start table section */
+.tbl{
+    margin: 0 auto;
+    width: 40%;
+}
+
+.tbl th, .tbl td{
+    padding: 25px;
+}
+
+.tbl th{
+    background-color: var(--main-color);
+}
+
+.tbl td{
+    background-color: var(--section-color);
+}
+/* end table section */
+
+/* start form section */
+.my-form{
+    background-color: var(--section-color);
+    flex-flow: wrap row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.my-form h4{
+    color: var(--dark-color);
+}
+
+.my-form input{
+    width: 320px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.my-form input[type="submit"]{
+    color: var(--section-color);
+    background-color: var(--dark-color);
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.my-form input[type="submit"]:hover{
+    color: var(--dark-color);
+    background-color: var(--section-color);
+    border: 1px solid var(--dark-color);
+}
+/* end form section */
+
+/* error message */
+.error{
+    background-color: var(--red-color);
+    color: var(--section-color);
+}
+/* error message */
+
+/* go to top button */
+#myBtn {  
+    display: inline;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 20px;
+    right: 20pt;
+    z-index: 100;
+    background-color:var(--red-color);
+    color:var(--dark-color);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Montserrat; 
+    cursor: pointer; 
+    border-radius: 9999em;
+    border: none;
+  }
+  
+  #myBtn:hover {
+    background-color:transparent;
+    color:var(--yellow-color);
+    border: var(--red-color) 2px solid;
+  }
+  /*end go to top button */
